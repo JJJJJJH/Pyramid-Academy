@@ -34,6 +34,7 @@ public class Player {
                     return true;
                 }else if(square.getY() ==y && square.getX() == x &&
                 square.getGameStatus().equals(GameStatus.HIT)){
+                    square.setGameStatus(GameStatus.HIT);
                     board.getSquare(x,y).setGameStatus(GameStatus.HIT);
                     System.out.println("Already Hit");
                     return false;

@@ -31,17 +31,15 @@ public class Ship {
                     ship1.getFields().get(i).getX()> board.getSizeX()){
                 count ++;
             }
-            for(int k = 0; k< ships.size(); k++){
-                for (int z = 0; z< ships.get(k).getFields().size(); z++){
-                    if (ship1.getFields().get(i).getX() == ships.get(k).getFields().get(z).getX() &&
-                            ship1.getFields().get(i).getY() == ships.get(k).getFields().get(z).getY()){
-                        count ++;
+            for (Ship ship : ships) {
+                for (int z = 0; z < ship.getFields().size(); z++) {
+                    if (ship1.getFields().get(i).getX() == ship.getFields().get(z).getX() &&
+                            ship1.getFields().get(i).getY() == ship.getFields().get(z).getY()) {
+                        count++;
                     }
                 }
             }
         }
-        if (count ==0)
-            return true;
-        return false;
+        return count == 0;
     }
 }

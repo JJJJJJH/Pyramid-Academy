@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Input {
 
+
     private Scanner scanner = new Scanner(System.in);
     private List<Board> boards = new ArrayList<>();
 
@@ -20,6 +21,7 @@ public class Input {
     public void generateBoard() {
         int x = 10;
         int y = 10;
+        System.out.println("GameBoard will be 10 X 10.");
         Board board1 = new Board(x, y);
         Board board2 = new Board(x, y);
         boards.add(board1);
@@ -44,9 +46,14 @@ public class Input {
         System.out.println("Select col: ");
         int col = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Select ship: \n"+ "1.Carrier\n"
-        + "2.Battleship\n"+"3.Destroyer\n"+ "4.Submarine\n"
-        + "5.Patrol Boat\n");
+        System.out.println("""
+                Select ship:\s
+                1.Carrier
+                2.Battleship
+                3.Destroyer
+                4.Submarine
+                5.Patrol Boat
+                """);
         int shipType = scanner.nextInt();
         CoodinatesAndShipType.add(row);
         CoodinatesAndShipType.add(col);
@@ -74,12 +81,8 @@ public class Input {
         System.out.println("Player"+ GamePlayer + " shoot");
         System.out.println("Select row: ");
         int row = scanner.nextInt();
-        scanner.nextLine();
         System.out.println("Select col: ");
         int col = scanner.nextInt();
-        scanner.nextLine();
         return new int[]{row,col};
     }
-
-
 }

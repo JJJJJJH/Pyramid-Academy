@@ -38,6 +38,8 @@ public class Square {
                 result = 'c';
             case MISS:
                 result = 'm';
+            case EMPTY:
+                result = '-';
         }
         return result;
     }
