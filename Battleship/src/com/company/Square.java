@@ -28,19 +28,13 @@ public class Square {
     }
 
     public char getChar() {
-        char result = ' ';
-        switch (gameStatus){
-            case WATER:
-                result = '~';
-            case HIT:
-                result = 'X';
-            case SHIP:
-                result = 'c';
-            case MISS:
-                result = 'm';
-            case EMPTY:
-                result = '-';
-        }
+        char result = switch (gameStatus) {
+            case WATER -> '~';
+            case HIT -> 'X';
+            case SHIP -> 'c';
+            case MISS -> 'm';
+            case EMPTY -> '-';
+        };
         return result;
     }
 }

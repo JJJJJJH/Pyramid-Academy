@@ -38,96 +38,107 @@ public class Board {
     public  void buildShip(Square square, Ship ship){
         System.out.println("""
                 How do you want to place you ship?
-                Vertical or Horizontal? (Enter V or H)
+                Vertical or Horizontal? (Enter v or h)
                 """);
         Scanner scanner = new Scanner(System.in);
         String vorh = scanner.nextLine();
+        int x = square.getX();
+        int y = square.getY();
 
-        if (vorh.equals("V")){
-            switch (ship.getShipType().label){
-                case 1:
+        if (vorh.equals("h")){
+
+            switch (ship.getShipType().label) {
+                case 1 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
-                    break;
-                case 2:
-                    square.setGameStatus(GameStatus.SHIP);
-                    ship.add(square);
-                    int x = square.getX();
-                    int y = square.getY();
-                    ship.add(new Square(x, y+1, GameStatus.SHIP));
-                    break;
-                case 3:
+
+                }
+                case 2 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
                     x = square.getX();
                     y = square.getY();
-                    ship.add(new Square(x, y+1, GameStatus.SHIP));
-                    ship.add(new Square(x, y+2, GameStatus.SHIP));
-                    break;
-                case 4:
+                    ship.add(new Square(x, y + 1, GameStatus.SHIP));
+
+                }
+                case 3 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
                     x = square.getX();
                     y = square.getY();
-                    ship.add(new Square(x, y+1, GameStatus.SHIP));
-                    ship.add(new Square(x, y+2, GameStatus.SHIP));
-                    ship.add(new Square(x, y+3, GameStatus.SHIP));
-                    break;
-                case 5:
+                    ship.add(new Square(x, y + 1, GameStatus.SHIP));
+                    ship.add(new Square(x, y + 2, GameStatus.SHIP));
+
+                }
+                case 4 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
                     x = square.getX();
                     y = square.getY();
-                    ship.add(new Square(x, y+1, GameStatus.SHIP));
-                    ship.add(new Square(x, y+2, GameStatus.SHIP));
-                    ship.add(new Square(x, y+3, GameStatus.SHIP));
-                    ship.add(new Square(x, y+4, GameStatus.SHIP));
-                    break;
+                    ship.add(new Square(x, y + 1, GameStatus.SHIP));
+                    ship.add(new Square(x, y + 2, GameStatus.SHIP));
+                    ship.add(new Square(x, y + 3, GameStatus.SHIP));
+
+                }
+                case 5 -> {
+                    square.setGameStatus(GameStatus.SHIP);
+                    ship.add(square);
+                    x = square.getX();
+                    y = square.getY();
+                    ship.add(new Square(x, y + 1, GameStatus.SHIP));
+                    ship.add(new Square(x, y + 2, GameStatus.SHIP));
+                    ship.add(new Square(x, y + 3, GameStatus.SHIP));
+                    ship.add(new Square(x, y + 4, GameStatus.SHIP));
+
+                }
             }
         }
-        else if(vorh.equals("H")){
-            switch (ship.getShipType().label){
-                case 1:
+        else if(vorh.equals("v")){
+            switch (ship.getShipType().label) {
+                case 1 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
-                    break;
-                case 2:
-                    square.setGameStatus(GameStatus.SHIP);
-                    ship.add(square);
-                    int x = square.getX();
-                    int y = square.getY();
-                    ship.add(new Square(x+1, y, GameStatus.SHIP));
-                    break;
-                case 3:
+                }
+                case 2 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
                     x = square.getX();
                     y = square.getY();
-                    ship.add(new Square(x+1, y, GameStatus.SHIP));
-                    ship.add(new Square(x+2, y, GameStatus.SHIP));
-                    break;
-                case 4:
+                    ship.add(new Square(x + 1, y, GameStatus.SHIP));
+                }
+                case 3 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
                     x = square.getX();
                     y = square.getY();
-                    ship.add(new Square(x+1, y, GameStatus.SHIP));
-                    ship.add(new Square(x+2, y, GameStatus.SHIP));
-                    ship.add(new Square(x+3, y, GameStatus.SHIP));
-                    break;
-                case 5:
+                    ship.add(new Square(x + 1, y, GameStatus.SHIP));
+                    ship.add(new Square(x + 2, y, GameStatus.SHIP));
+                }
+                case 4 -> {
                     square.setGameStatus(GameStatus.SHIP);
                     ship.add(square);
                     x = square.getX();
                     y = square.getY();
-                    ship.add(new Square(x+1, y, GameStatus.SHIP));
-                    ship.add(new Square(x+2, y, GameStatus.SHIP));
-                    ship.add(new Square(x+3, y, GameStatus.SHIP));
-                    ship.add(new Square(x+4, y, GameStatus.SHIP));
-                    break;
+                    ship.add(new Square(x + 1, y, GameStatus.SHIP));
+                    ship.add(new Square(x + 2, y, GameStatus.SHIP));
+                    ship.add(new Square(x + 3, y, GameStatus.SHIP));
+                }
+                case 5 -> {
+                    square.setGameStatus(GameStatus.SHIP);
+                    ship.add(square);
+                    x = square.getX();
+                    y = square.getY();
+                    ship.add(new Square(x + 1, y, GameStatus.SHIP));
+                    ship.add(new Square(x + 2, y, GameStatus.SHIP));
+                    ship.add(new Square(x + 3, y, GameStatus.SHIP));
+                    ship.add(new Square(x + 4, y, GameStatus.SHIP));
+                }
             }
 
+
         }
+
 
     }
+
 }

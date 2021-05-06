@@ -14,14 +14,17 @@ public class Game {
         Board boardPlayer1 = boards.get(0);
         Board boardPlayer2 = boards.get(1);
 
+
+        //Player player1=new Player(shipsPlayer1, boardPlayer2);
+        //Player player2 = new Player(shipsPlayer2, boardPlayer1);
+
+
         for (int i = 0; i<5; i++){
             Ship one = board1.createShip(0);
             while (!one.isPlaceGood(one, shipsPlayer1, boardPlayer1)){
                 one = board1.createShip(0);
             }
             shipsPlayer1.add(one);
-            Display display = new Display();
-            display.printBoard(boardPlayer1);
         }
         for (int i = 0; i<5; i++){
             Ship one = board1.createShip(1);
@@ -29,8 +32,7 @@ public class Game {
                 one = board1.createShip(1);
             }
             shipsPlayer2.add(one);
-            Display display = new Display();
-            display.printBoard(boardPlayer2);
+
     }
         Player player1=new Player(shipsPlayer1, boardPlayer2);
         Player player2 = new Player(shipsPlayer2, boardPlayer1);
