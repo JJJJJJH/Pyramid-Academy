@@ -1,39 +1,275 @@
-.App {
-  background-color: #282c34;
+.App{
+  font-family: "futura-pt",arial;
+  background: transparent;
+  display:flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.App-header{
+  margin-top: 100px;
+  margin-left: 80%;
+  align-content:flex-start;
+}
+
+.Printer{
+  flex-shrink:0;
+  width:30px;
+  height:30px;
+}
+.Word{
+  flex-shrink:0;
+  width:30px;
+  height:40px;
+}
+.imageContainer{
+  flex-shrink:0;
+  align-content: flex-start;
+
+  white-space:pre-line;
+}
+.name{
+  margin-top:40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.profilepic{
+  flex-shrink:0;
+  margin-top: 30px;
+  width:150px;
+  height:150px;
+  border-radius: 75px;
+  overflow:hidden;
+
+}
+.pyramidPic{
+  flex-shrink:0;
+  margin-top: 30px;
+  width:150px;
+  height:150px;
+  border-radius: 75px;
+  overflow:hidden;
+}
+.container{
+  width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.topRow{
+  min-width: 0;
+  height: 180px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 30px;
+  
+}
+.jobTitle{
+  min-width: 0;
+  font-size: 20px;
+  color: orange;
+}
+.nameAndTitle{
+align-content: flex-start;
+padding-left: 20px;
+padding-right: 500px;
+}
+.equivPanel{
+  margin-top:15px;
+  min-height: 300px;
+  border: 1px solid #41a3f3;
+}
+.equivHeader{
+  display:flex; 
+  text-align:start;
+  vertical-align: middle;
+  font-size:24px;
+  color:#ffffff;
+  background-color: #41a3f3;
+  border-color: #41a3f3;
+  padding-left: 15px;
+}
+.keyboardPic{
+  background: transparent;
+  padding-right:15px;
+  width: 35px;
+  height: 35px;
+}
+.equivBody{
+  display:flex;
+  box-sizing: border-box;
+  padding-top:16px;
+  padding-right:16px;
+  padding-bottom:16px;
+  padding-left:16px;
+}
+.circleContainer{
+  display:grid;
+  width:fit-content;
+  padding:20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.circle{
+  display:grid;
+}
+.circleImage{
+  grid-column:1;
+  grid-row:1;
+}
+.numberEquiv{
+  grid-column:1;
+  grid-row:1;
+  text-align: center;
+  padding-top:40px;
+
+}
+.typeOfEquiv{
+  font-size: 18px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.equivDescription{
+  padding-top: 200px;
+  font-size:12px;
+  color:rgb(116, 116, 116);
+  position:absolute;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aboutMeParagraph{
+  font-size: 16px!important;
+    line-height: 21px;
+    word-wrap: break-word;
+    text-align: justify;
+    margin: 0 0 22px;
+    padding-bottom: px;
 }
+.equivPanel2{
+  margin-top:15px;
+  border: 1px solid #9b7bb5;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+}
+.equivHeader2{
+  display:flex; 
+  text-align:start;
+  vertical-align: middle;
+  font-size:24px;
+  color:#ffffff;
+  background-color: #9b7bb5;
+  border-color: #9b7bb5;
+  padding-left: 15px;
+}
+.Ttu{
+  background: transparent;
+  width:140px;
+  height:90px;
+}
+.WichitaState{
+  display:flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: flex-start;
+  height:100px;
+}
+.WichitaStateImage{
+  height: fit-content;
+  width: fit-content;
+}
+.equivBody2{
+  padding:16px;
+}
+.bach{
+  padding-left: 75px;
+  margin: 0px;
+  font-size: 24px;
+  height:fit-content;
+}
+.bachinfo{
+  padding-left: 75px;
+  font-size:16px;
+  color:#92a7b3;
+  height:fit-content;
+  margin: 0px;
+}
+.equivPanel3{
+  margin-top:15px;
+  border: 1px solid #D87CA6;
+
+}
+.equivHeader3{
+  display:flex; 
+  text-align:start;
+  vertical-align: middle;
+  font-size:24px;
+  color:#ffffff;
+  background-color: #D87CA6;
+  border-color: #D87CA6;
+  padding-left: 15px;
+}
+.equivBody3{
+  padding:16px;
+  display:inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.equivPanel4{
+  margin-top:15px;
+  border: 1px solid #ade0e0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.equivHeader4{
+  display:flex; 
+  text-align:start;
+  vertical-align: middle;
+  font-size:24px;
+  color:#ffffff;
+  background-color: #ade0e0;
+  border-color: #ade0e0;
+  padding-left: 15px;
+}
+.equivBody4{
+  padding:16px;
+}
+.equivPanel5{
+  margin-top:15px;
+  border: 1px solid #fac252;
+
+}
+.equivHeader5{
+  display:flex; 
+  text-align:start;
+  vertical-align: middle;
+  font-size:24px;
+  color:#ffffff;
+  background-color: #fac252;
+  border-color: #fac252;
+  padding-left: 15px;
+}
+.equivBody5{
+  padding:16px;
+}
+.equivPanel6{
+  margin-top:15px;
+  border: 1px solid #ade0e0;
+
+}
+.equivHeader6{
+  display:flex; 
+  text-align:start;
+  vertical-align: middle;
+  font-size:24px;
+  color:#ffffff;
+  background-color: rgb(144, 237, 125);
+  border-color: rgb(144, 237, 125);
+  padding-left: 15px;
+}
+.equivBody6{
+  padding:16px;
 }
