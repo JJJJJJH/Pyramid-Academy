@@ -44,12 +44,12 @@
   overflow:hidden;
 
 }
-.pyramidPic{
+.gensparkPic{
   flex-shrink:0;
-  margin-top: 30px;
-  width:150px;
+  margin-top: 20px;
+  width:350px;
   height:150px;
-  border-radius: 75px;
+  border-radius: 10px;
   overflow:hidden;
 }
 .container{
@@ -77,7 +77,7 @@
 .nameAndTitle{
 align-content: flex-start;
 padding-left: 20px;
-padding-right: 500px;
+padding-right: 300px;
 }
 .equivPanel{
   margin-top:15px;

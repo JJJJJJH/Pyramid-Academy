@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import PyramidAcademy from './images/pyramidAcademy.png';
-import PyramidPic from './images/pyramid.png';
+import GenSpark from './images/logo.png';
+import GenSparkPic from './images/genspark.png';
 import jh from './images/jh.png';
 import PurpleCircle from './images/purpleCircle.png';
 import OrangeCircle from './images/orangeCircle.png';
@@ -227,11 +227,11 @@ class App extends Component {
       Fullstack Java Developer
       </div>
       </div>
-      <img src={PyramidAcademy} alt="alt" className="pyramidPic"/>
+      <img src={GenSpark} alt="alt" className="gensparkPic"/>
       </div>
         <div className="equivPanel">
         <div className="equivHeader" >
-          <img src={PyramidPic} alt="alt" className="keyboardPic"/>
+          <img src={GenSparkPic} alt="alt" className="keyboardPic"/>
           Industry Equivalency
         </div>
         <div className="equivBody">
@@ -300,12 +300,12 @@ class App extends Component {
           About Me
         </h2>
         <p className="aboutMeParagraph">
-        I recently graduated from Texas Tech University with a bachelor in Integrative Studies, Computer Science, and Mathematics. After graduating, I joined in Pyramid Academy's training program to help prepare me for my career, and now I am looking for a company at which I can continue to learn and grow as a software engineer.<br/><br/>
+        I recently graduated from Texas Tech University with a bachelor in Integrative Studies, Computer Science, and Mathematics. After graduating, I joined in GenSpark's training program to help prepare me for my career, and now I am looking for a company at which I can continue to learn and grow as a software engineer.<br/><br/>
         Dedicated and efficient full stack developer in application layers, presentation layers, and database. Certified in Backend technology. Team worker across technology, design, and planning. Seeking for further improve Java skill as the future full stack developer.</p>
       </div>
         <div className="equivPanel2">
         <div className="equivHeader2" >
-         <img src={PyramidPic} alt="alt" className="keyboardPic"/>
+         <img src={GenSparkPic} alt="alt" className="keyboardPic"/>
           Education and Certification
       </div>
       <div className="equivBody2">
@@ -324,7 +324,7 @@ class App extends Component {
     </div>
         <div className="equivPanel3">
         <div className="equivHeader3" >
-        <img src={PyramidPic} alt="alt" className="keyboardPic"/>
+        <img src={GenSparkPic} alt="alt" className="keyboardPic"/>
           Skill Matrix
       </div>
       <div className="equivBody3">
@@ -352,7 +352,7 @@ class App extends Component {
     </div>
         <div className="equivPanel4">
         <div className="equivHeader4" >
-        <img src={PyramidPic} alt="alt" className="keyboardPic"/>
+        <img src={GenSparkPic} alt="alt" className="keyboardPic"/>
           Projects
       </div>
       <div className="equivBody4">
@@ -383,7 +383,7 @@ class App extends Component {
         <h4 style={{fontSize: 24,fontWeight: 400,marginBottom: 5,marginTop:9}}>
         Snake Game
       </h4>
-      <p>Worked with two teammates in Pyramid Academy. This project is a update of classic Snake game.
+      <p>Worked with two teammates in GenSpark. This project is a update of classic Snake game.
         It mainly used Java GUI skills(JFrame, JPanel). 
         We build three type of fruits to control and change the snake's moving speed.
 
@@ -405,7 +405,7 @@ class App extends Component {
         
     <div className="equivPanel6">
         <div className="equivHeader6" >
-        <img src={PyramidPic} alt="alt" className="keyboardPic"/>
+        <img src={GenSparkPic} alt="alt" className="keyboardPic"/>
           GitHub Projects
       </div>
       <div className="equivBody6">
@@ -413,7 +413,7 @@ class App extends Component {
         <a href="https://github.com/JJJJJJH/Pyramid-Academy">Pyramid Academy Personal Projects</a>
         </h4>
         <p>
-        This is a pachage of projects I have done in Pyramid Academy.
+        This is a pachage of projects I have done in GenSpark.
         Projects: Battleship, GuessTheNumber, Hangman, Hunman VS Goblins, Noughts and Crosses(TicTacToe), RPS(Rock Paper Scissors), Mavel-fsp, React-profile(this project)
 
         </p>
@@ -457,7 +457,7 @@ class App extends Component {
         
         <div className="equivPanel5">
         <div className="equivHeader5" >
-        <img src={PyramidPic} alt="alt" className="keyboardPic"/>
+        <img src={GenSparkPic} alt="alt" className="keyboardPic"/>
           Working Experiences
       </div>
       <div className="equivBody5">
@@ -465,7 +465,7 @@ class App extends Component {
       Java Full Stack Developer
       </h4>
       <h5 style={{marginBottom:10,fontSize:20,color: '#fac252',fontWeight:400,marginTop:9}}>
-      Pyramid Consulting
+      GenSpark
       </h5>
       <h4 style={{marginBottom:10,fontSize:18,fontWeight:600,marginTop:9}}>
         April 2021 - PRESENT
