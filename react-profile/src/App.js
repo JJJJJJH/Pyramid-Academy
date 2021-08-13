@@ -290,6 +290,14 @@ class App extends Component {
                 <p className="typeOfEquiv">React</p>
               </div>
 
+              <div className="circleContainer">
+                <div className="circle">
+                  <img src={PurpleCircle} alt="alt" className="circleImage" />
+                  <div className="numberEquiv">3</div>
+                </div>
+                <p className="typeOfEquiv">SpringBoot</p>
+              </div>
+
               <p className="equivDescription">
                 Equivalency in Months
           </p>
